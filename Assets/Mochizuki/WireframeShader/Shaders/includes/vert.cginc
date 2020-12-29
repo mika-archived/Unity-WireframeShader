@@ -8,7 +8,7 @@
 v2g vs(appdata v)
 {
     v2g o;
-    o.vertex = mul(unity_ObjectToWorld, v.vertex);
+    o.vertex = v.vertex;
     o.normal = UnityObjectToWorldNormal(v.normal);
     o.uv     = TRANSFORM_TEX(v.texcoord, _MainTex);
     o.color  = v.color;

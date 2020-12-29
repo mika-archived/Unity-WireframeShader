@@ -30,7 +30,7 @@ struct appdata
 
 struct v2g
 {
-    float4 vertex : SV_POSITION;
+    float4 vertex : POSITION;
     float3 normal : NORMAL;
     fixed4 color  : COLOR;
     float2 uv     : TEXCOORD0;
@@ -43,7 +43,7 @@ struct g2f
     float3 normal   : NORMAL;
     fixed4 color    : COLOR;
     float2 uv       : TEXCOORD0;
-    float3 worldPos : TEXCOORD1;
+    // float3 worldPos : TEXCOORD1;
 };
 
 #include "vert.cginc"

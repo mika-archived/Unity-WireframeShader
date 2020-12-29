@@ -28,9 +28,9 @@ Shader "Mochizuki/Wireframe Shader/Transparent"
 
         // Advanced
         [Enum(UnityEngine.Rendering.CullMode)]
-        _Culling ("Culling",                                 Int) = 0
+        _Culling         ("Culling",                         Int) = 0
         [Enum(Off,0,On,1)]
-        _ZWrite ("_ZWrite",                                  Int) = 0
+        _ZWrite          ("ZWrite",                          Int) = 0
     }
 
     SubShader
