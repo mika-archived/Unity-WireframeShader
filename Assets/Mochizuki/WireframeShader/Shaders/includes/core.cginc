@@ -10,7 +10,7 @@ uniform sampler2D _MainTex;
 uniform float4    _MainTex_ST;
 uniform float3    _Color;
 uniform float     _Alpha;
-uniform int       _UseVertexColor;
+uniform float     _UseVertexColor;
 
 uniform int       _WireframeMode;
 uniform float     _BorderThickness;
@@ -32,7 +32,7 @@ struct v2g
 {
     float4 vertex : SV_POSITION;
     float3 normal : NORMAL;
-    fixed3 color  : COLOR;
+    fixed4 color  : COLOR;
     float2 uv     : TEXCOORD0;
     float3 scale  : TEXCOORD1;
 };
@@ -41,7 +41,7 @@ struct g2f
 {
     float4 pos      : SV_POSITION;
     float3 normal   : NORMAL;
-    fixed3 color    : COLOR;
+    fixed4 color    : COLOR;
     float2 uv       : TEXCOORD0;
     float3 worldPos : TEXCOORD1;
 };

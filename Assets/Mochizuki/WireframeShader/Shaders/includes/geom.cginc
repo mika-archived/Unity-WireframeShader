@@ -19,7 +19,7 @@ inline float3 getVertex(float3 center, float3 offset)
     return center + mul(unity_ObjectToWorld, float4(offset, 0)).xyz;
 }
 
-inline g2f getStreamData(float3 vertex, float3 normal, fixed3 color, float2 uv)
+inline g2f getStreamData(float3 vertex, float3 normal, fixed4 color, float2 uv)
 {
     g2f o;
     o.pos      = UnityWorldToClipPos(vertex);

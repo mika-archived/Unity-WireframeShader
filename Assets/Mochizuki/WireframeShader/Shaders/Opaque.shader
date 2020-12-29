@@ -10,14 +10,14 @@ Shader "Mochizuki/Wireframe Shader/Opaque"
         // Main
         _MainTex         ("Main Texture",                     2D) = "white" {}
         _Color           ("Color",                         Color) = (0, 0, 0)
-        [WsToggleWithoutKeyword]
-        _UseVertexColor  ("Use Vertex Color",                Int) = 0
+        [MaterialToggle]
+        _UseVertexColor  ("Use Vertex Color",              Float) = 0
 
         // Wireframe
         [Enum(Mochizuki.WireframeShader.WireframeMode)]
         _WireframeMode   ("Wireframe Mode",                  Int) = 0
         _BorderThickness ("Border Thickness",        Range(0, 2)) = 1.0
-        [WsToggleWithoutKeyword]
+        [MaterialToggle]
         _UseShaderScale  ("Use Shader Scale",              Float) = 1.0
 
         // Emissive
