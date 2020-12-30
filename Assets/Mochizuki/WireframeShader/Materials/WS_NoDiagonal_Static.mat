@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WS_NoDiagonal_Static
-  m_Shader: {fileID: 4800000, guid: 00c24f8ca0993024496e03c08e57c0d7, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5119113c2cbd11348b0cd6ab9f6e81ee, type: 3}
   m_ShaderKeywords: _USESHADERSCALE_ON _USEVERTEXCOLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
