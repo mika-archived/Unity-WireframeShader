@@ -3,7 +3,7 @@
  * Licensed under the MIT License. See LICENSE in the project root for license information.
  *------------------------------------------------------------------------------------------*/
 
-Shader "Mochizuki/Wireframe Shader/Transparent"
+Shader "Mochizuki/Wireframe Shader/Particle Transparent"
 {
     Properties
     {
@@ -59,7 +59,7 @@ Shader "Mochizuki/Wireframe Shader/Transparent"
 
             #pragma target   4.5
 
-            #define CALC_ON_GEOMETRY
+            #define CALC_ON_FRAGMENT
             #define TRANSPARENT
 
             #include "includes/core.cginc"

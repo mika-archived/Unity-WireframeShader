@@ -43,7 +43,11 @@ struct g2f
     float3 normal   : NORMAL;
     fixed4 color    : COLOR;
     float2 uv       : TEXCOORD0;
-    // float3 worldPos : TEXCOORD1;
+
+#if defined(CALC_ON_FRAGMENT)
+    float3 scale    : TEXCOORD1;
+    float3 bary     : TEXCOORD2;
+#endif
 };
 
 #include "vert.cginc"

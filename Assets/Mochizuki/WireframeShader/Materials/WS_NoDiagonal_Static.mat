@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WS_NoDiagonal
-  m_Shader: {fileID: 4800000, guid: 9886da7e92bb14545ac58fbb71619179, type: 3}
+  m_Name: WS_NoDiagonal_Static
+  m_Shader: {fileID: 4800000, guid: 00c24f8ca0993024496e03c08e57c0d7, type: 3}
   m_ShaderKeywords: _USESHADERSCALE_ON _USEVERTEXCOLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -65,13 +65,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Alpha: 1
-    - _BorderThickness: 0.991
+    - _BorderThickness: 0.303
     - _BumpScale: 1
     - _Culling: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Emission: 2.14
+    - _Emission: 1.12
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

@@ -57,6 +57,8 @@ Shader "Mochizuki/Wireframe Shader/Opaque"
 
             #pragma target   4.5
 
+            #define CALC_ON_GEOMETRY
+
             #include "includes/core.cginc"
             ENDCG
         }
