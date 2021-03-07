@@ -10,7 +10,7 @@ v2g vs(appdata v)
     v2g o;
     o.vertex = v.vertex;
     o.normal = UnityObjectToWorldNormal(v.normal);
-    o.uv     = TRANSFORM_TEX(v.texcoord, _MainTex);
+    o.uv     = v.texcoord;
     o.color  = v.color;
     o.scale  = v.scale;
     

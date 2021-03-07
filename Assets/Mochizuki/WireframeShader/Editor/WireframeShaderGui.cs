@@ -20,7 +20,7 @@ namespace Mochizuki.WireframeShader
 
     public class WireframeShaderGui : ShaderGUI
     {
-        private const int VersionMajor = 0;
+        private const int VersionMajor = 1;
         private const int VersionMinor = 1;
         private const int VersionPatch = 0;
 
@@ -40,8 +40,8 @@ namespace Mochizuki.WireframeShader
             _Color = FindProperty(nameof(_Color), properties, false);
             _Culling = FindProperty(nameof(_Culling), properties, false);
             _Emission = FindProperty(nameof(_Emission), properties, false);
-            _EmissionMask = FindProperty(nameof(_EmissionMask), properties, false);
-            _MainTex = FindProperty(nameof(_MainTex), properties, false);
+            // _EmissionMask = FindProperty(nameof(_EmissionMask), properties, false);
+            // _MainTex = FindProperty(nameof(_MainTex), properties, false);
             _UseVertexColor = FindProperty(nameof(_UseVertexColor), properties, false);
             _WireframeMode = FindProperty(nameof(_WireframeMode), properties, false);
             _ZWrite = FindProperty(nameof(_ZWrite), properties, false);
@@ -74,8 +74,8 @@ namespace Mochizuki.WireframeShader
             {
                 GUILayout.Label("Main Color & Texture", EditorStyles.boldLabel);
 
-                me.TexturePropertySingleLine(new GUIContent("Main Texture"), _MainTex);
-                me.TextureScaleOffsetProperty(_MainTex);
+                // me.TexturePropertySingleLine(new GUIContent("Main Texture"), _MainTex);
+                // me.TextureScaleOffsetProperty(_MainTex);
                 me.ColorProperty(_Color, "Color");
 
                 if (_isTransparent)
@@ -130,8 +130,8 @@ namespace Mochizuki.WireframeShader
         private MaterialProperty _Color;
         private MaterialProperty _Culling;
         private MaterialProperty _Emission;
-        private MaterialProperty _EmissionMask;
-        private MaterialProperty _MainTex;
+        // private MaterialProperty _EmissionMask;
+        // private MaterialProperty _MainTex;
         private MaterialProperty _UseVertexColor;
         private MaterialProperty _WireframeMode;
         private MaterialProperty _ZWrite;

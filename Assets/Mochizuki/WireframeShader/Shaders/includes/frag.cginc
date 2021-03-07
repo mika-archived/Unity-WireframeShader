@@ -8,9 +8,9 @@
 inline fixed4 getColor(const g2f i)
 {
 #if defined(TRANSPARENT)
-    return _UseVertexColor ? i.color : tex2D(_MainTex, i.uv) * fixed4(_Color, _Alpha);
+    return _UseVertexColor ? i.color : /* UNITY_SAMPLE_TEX2D(_MainTex, TRANSFORM_TEX(i.uv, _MainTex)) * */ fixed4(_Color, _Alpha);
 #else
-    return _UseVertexColor ? i.color : tex2D(_MainTex, i.uv) * fixed4(_Color, 1);
+    return _UseVertexColor ? i.color : /* UNITY_SAMPLE_TEX2D(_MainTex, TRANSFORM_TEX(i.uv, _MainTex)) * */ fixed4(_Color, 1);
 #endif
 }
 
@@ -18,7 +18,7 @@ fixed4 fs(const g2f i) : SV_TARGET
 {
     fixed4 color = getColor(i);
 
-    const fixed4 emission  = tex2D(_EmissionMask, i.uv);
+    const fixed4 emission  = /* UNITY_SAMPLE_TEX2D(_EmissionMask, TRANSFORM_TEX(i.uv, _EmissionMask)) */ fixed4(1, 1, 1, 1);
     const fixed  intensity = any(emission) ? _Emission : 1;
 
     color.rgb *= pow(2, intensity);

@@ -6,8 +6,8 @@
 #include "UnityCG.cginc"
 #include "AutoLight.cginc"
 
-uniform sampler2D _MainTex;
-uniform float4    _MainTex_ST;
+// UNITY_DECLARE_TEX2D(_MainTex);
+// uniform float4    _MainTex_ST;
 uniform float3    _Color;
 uniform float     _Alpha;
 uniform float     _UseVertexColor;
@@ -17,7 +17,8 @@ uniform float     _BorderThickness;
 uniform float     _UseShaderScale;
 
 uniform float     _Emission;
-uniform sampler2D _EmissionMask;
+// UNITY_DECLARE_TEX2D(_EmissionMask);
+// uniform float4    _EmissionMask_ST;
 
 struct appdata
 {

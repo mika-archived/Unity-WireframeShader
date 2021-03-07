@@ -8,7 +8,7 @@ Shader "Mochizuki/Wireframe Shader/Opaque"
     Properties
     {
         // Main
-        _MainTex         ("Main Texture",                     2D) = "white" {}
+        // _MainTex         ("Main Texture",                     2D) = "white" {}
         _Color           ("Color",                         Color) = (0, 0, 0)
         [MaterialToggle]
         _UseVertexColor  ("Use Vertex Color",              Float) = 0
@@ -22,8 +22,8 @@ Shader "Mochizuki/Wireframe Shader/Opaque"
 
         // Emissive
         _Emission        ("Emission Intensity",  Range(0.0, 5.0)) = 1.0
-        [NoScaleOffset]
-        _EmissionMask    ("Emission Mask",                    2D) = "white" {}
+        // [NoScaleOffset]
+        // _EmissionMask    ("Emission Mask",                    2D) = "white" {}
 
         // Advanced
         [Enum(UnityEngine.Rendering.CullMode)]
